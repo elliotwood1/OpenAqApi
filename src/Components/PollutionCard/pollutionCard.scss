@@ -1,0 +1,52 @@
+.pollutionCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: -1px;
+  padding: 16px;
+  color: #747373;
+  font-family: sans-serif;
+
+  &:first-child {
+    border-top: 0;
+    border-bottom: 1px solid #747373;
+  }
+
+  &:last-child {
+    border-top: 1px solid #747373;
+    border-bottom: 0;
+  }
+
+  .location {
+    order: 2;
+    font-size: 16px;
+    margin-top: 0;
+  }
+
+  .measurements {
+    order: 1;
+    display: inline-block;
+    font-size: 20px;
+
+    .measurementsValue {
+      display: inline-block;
+      margin-right: 4px;
+    }
+    .measurementsUnit {
+      display: inline-block;
+    }
+  }
+
+  .pollutionLevelBarContainer {
+    order: 3;
+    width: 100%;
+    background: #59bb64;
+
+    .pollutionStrengthValue {
+      background: red;
+      text-align: right;
+      padding-top: 3px;
+      padding-bottom: 3px;
+    }
+  }
+}
